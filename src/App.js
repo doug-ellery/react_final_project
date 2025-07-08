@@ -1,22 +1,17 @@
-import logo from './logo.svg';
+import rock from './rock.png';
+import paper from './paper.png';
+import scissors from './scissors.png';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        Welcome to our rock paper scissors game!
+        <img src={rock} className="App-rock" alt="logo" />
+        <img src={paper} className="App-paper" alt="logo" />
+        <img src={scissors} className="App-scissors" alt="logo" />
       </header>
     </div>
   );
