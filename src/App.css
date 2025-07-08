@@ -5,23 +5,23 @@
 .App-rock {
   height: 15vmin;
   position: relative;
-  right: 600px;
+  /*right: 600px;*/
   pointer-events: none;
 }
 
 .App-paper {
   height: 15vmin;
   position: relative;
-  right: 460px;
-  bottom: 128px;
+  /*right: 460px;*/
+  /*bottom: 128px;*/
   pointer-events: none;
 }
 
 .App-scissors {
   height: 15vmin;
   position: relative;
-  right: 320px;
-  bottom: 257px;
+  /*right: 320px;*/
+  /*bottom: 257px;*/
   pointer-events: none;
 }
 
@@ -39,6 +39,11 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  color: rgb(81, 63, 63); 
+}
+
+.App-choice{
+  translate: 0px -350px;
   color: rgb(81, 63, 63);
 }
 

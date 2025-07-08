@@ -9,10 +9,14 @@ function App() {
     <div className="App">
       <header className="App-header">
         Welcome to our rock paper scissors game!
+      </header>
+      <h2 className = "App-choice">
+        Choose your move:
+        <br></br>
         <img src={rock} className="App-rock" alt="logo" />
         <img src={paper} className="App-paper" alt="logo" />
         <img src={scissors} className="App-scissors" alt="logo" />
-      </header>
+      </h2>
     </div>
   );
 }
