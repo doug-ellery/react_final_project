@@ -39,7 +39,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(81, 63, 63); 
+  color: rgb(33, 31, 161); 
 }
 
 .App-choice{
@@ -48,7 +48,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #9a0404;
 }
 
 @keyframes App-logo-spin {
