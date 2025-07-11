@@ -10,6 +10,11 @@ const choices = [
   { name: "paper", img: paper },
   { name: "scissors", img: scissors },
 ];
+var compWins = 0;
+var userWins = 0;
+
+
+
 
 function LikeButton(props) {
   const [likes, setLikes] = useState(0);
@@ -42,8 +47,10 @@ function determineWinner(player, computer) {
     (player === "paper" && computer === "rock") ||
     (player === "scissors" && computer === "paper")
   ) {
+    userWins = userWins + 1;
     return "You win!";
   }
+  compWins = compWins + 1;
   return "Computer wins!";
 }
 
@@ -51,6 +58,8 @@ function App() {
   const [playerChoice, setPlayerChoice] = useState("");
   const [computerChoice, setComputerChoice] = useState("");
   const [result, setResult] = useState("");
+
+  
 
   const handleChoice = (choice) => {
     const randomChoice = choices[Math.floor(Math.random() * choices.length)].name;
@@ -85,6 +94,7 @@ function App() {
         <h2 className="Title">Your choice: {playerChoice}</h2>
         <h2 className="Title">Computer's choice: {computerChoice}</h2>
         <h2 className="Title">Result: {result}</h2>
+        <h2>Total Score --- You : {userWins} vs Computer : {compWins}</h2>
       </div>
 
       <a
